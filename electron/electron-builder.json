@@ -1,0 +1,30 @@
+{
+    "appId": "#appId#",
+    "productName": "#name#",
+    "directories": {
+        "output": "#outputDir#"
+    },
+    "asar": true,
+    "asarUnpack": [],
+    "files": [
+        "dist/**/*",
+        "main.js",
+        "node_modules/**/*"
+    ],
+    "win": {
+        "icon": "public/favicon.png",
+        "target": ["portable"]
+    },
+    "mac": {
+        "icon": "public/favicon.png",
+        "target": ["default"],
+				"hardenedRuntime": true,
+				"gatekeeperAssess":false,
+				"electronLanguages": ["en", "ru"]
+    },
+    "linux": {
+        "icon": "public/favicon.png",
+        "target": ["AppImage"]
+    },
+    "extends": null
+}
